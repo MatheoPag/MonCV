@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCV.css">
+    <link rel="stylesheet" href="Header-footer.css">
+    <title>Mon CV - Mathéo Paganardi</title>
+    <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="NavText">
+            <h1>Matheo Paganardi</h1>
+            <h2 class="blue">/</h2>
+            <h2 class="light">Développeur web junior</h2>
+        </div>
+        <div class="NavBg" id="Nav">
+            <div class="NavLien" id="NavLien">
+                <a href="index.html"><button id="button1" onclick="RunButton1()" >À propos de moi</button></a>
+                <a href="pageCV.html"><button id="button2" onclick="RunButton2()" class="active">Mon CV</button></a>
+                <a href="#"><button id="button3" onclick="notAvailable()">Mes projets</button></a>
+            </div>
+        </div>
+            <label for="btn" class="btnLien">
+                <input id="btn" type="checkbox" onclick="CheckBox()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    </header>
+    <div class="mainBox">
+        <div class="title">
+            <label for="cv"><img src="img/pointBleu.png"></label>
+            <h1 id="cv">CV</h1>
+        </div>
+        <div class="subMainBox">
+            <div class="containerTitle">
+                <h1>Experience</h1>
+                <a href="document/Mathéo Paganardi-CV.pdf" download><button>Télécharger mon CV</button></a>
+            </div>
+            <div class="containers" id="container1">
+                <div class="part1">
+                    <h2>2018 - Maintenant</h2>
+                    <h3>Autodidacte</h3>
+                </div>
+                <div class="part2">
+                    <p>Durant mes années d'adolescence je me suis formé en développement web dans ma chambre en autodidacte et j'ai donc acquis des connaissances en HTML, CSS et Javascript</p>
+                </div>
+            </div>
+            <div class="containers" id="container2">
+                <div class="part1">
+                    <h2>Janvier 2023</h2>
+                    <h3>Stage</h3>
+                </div>
+                <div class="part2">
+                    <p>
+                        &#10095; Stage avec un informaticien au CNOI
+                    </p>
+                </div>
+            </div>
+            <div class="containerTitle">
+                <h1>Compétences</h1>
+            </div>
+            <div class="containers" id="container3">
+                <div class="comp" id="comp1">
+                    <h2>Mes atouts</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Persévérant</p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Passionné par le développement</p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Créatif</p>
+                        </div>  
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Coopératif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" id="comp2">
+                    <h2>Langues parlé/compris</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Français (langue maternelle)</p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Anglais</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" id="comp3">
+                    <h2>Langues apprise (dev)</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">HTML</p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">CSS</p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">JavaScript</p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="jsp"><img src="img/pointBleu.png"></label>
+                            <p id="jsp">Python (très peu)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerTitle">
+                <h1>Diplôme</h1>
+            </div>
+            <div class="containers" id="container4">
+                <div class="comp" id="DNB">
+                    <h2>Diplôme national du brevet</h2>
+                    <h3>2022</h3>
+                    <p>École Du Nord, Mapou, Ile Maurice</p>
+                    <a href="dnb.html" ><button class="DNB">Voir</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <address>
+            <footer>
+                <div class="credit">
+                    <p>Ce site a été inspirer par un <a href="https://fr.wix.com/website-template/view/html/2622">template WIX</a></p>
+                    <p><a href="credit.html">Cliquez pour voir les autres credit</a></p>
+                </div>
+                <div class="linkContainer">
+                    <div class="link">
+                        <label for="tel">Tel</label>
+                        <a href="tel:+23057998455" id="tel">+230 5799 8455</a>
+                    </div>
+                    <div class="link">
+                        <label for="mail">Mail</label>
+                        <a href="mailto:matheo.paganardi@gmail.com" id="mail">matheo.paganardi@gmail.com</a>
+                    </div>
+                    <div class="link">
+                        <label for="link">Social</label>
+                        <a href="#" id="link"><img src="img/linkedin.png" alt="linkedin" onclick="notAvailable()"></a>
+                    </div>
+                </div>
+            </footer>
+        </address>
+
+</body></html>
