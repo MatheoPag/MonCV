@@ -1,0 +1,743 @@
+@font-face {font-family: "MANIFESTO"; src: url("./Font/MANIFESTO.ttf") format("truetype");} 
+@font-face {font-family: "Momcake"; src: url("./Font/MomcakeThin-9Y6aZ.otf") format("opentype");}
+@font-face {font-family: "Montserrat Black"; src: url("./Font/MontserratBlack-3zOvZ.ttf") format("truetype");}
+@font-face {font-family: "Montserrat Medium"; src: url("./Font/MontserratMedium-lgZ6e.otf") format("opentype");}
+@font-face {font-family: "Montserrat Light"; src: url("./Font/MontserratLight-6YemM.otf") format("opentype");}
+@font-face {font-family: "Montserrat ExtraLight"; src: url("./Font/MontserratExtralight-jEZ6j.ttf") format("opentype");}
+@font-face {font-family: "Rubik Light"; src: url("./Font/Rubik-VariableFont_wght.ttf") format("truetype");}
+@font-face {font-family: "Helvetica"; src: url("./Font/Helvetica.ttf") format("truetype");}
+
+/* cette page du site a ete faite durant mon apprentisage donc la stucture n'es pas tres bonne */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /*border: red 1px solid;*/
+}
+
+header{
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    box-shadow: #000 0 -15px 25px;
+}
+
+
+.NavText{
+    position: absolute;
+    background-color: none;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 30px;
+}
+
+.NavText h1, h2{
+    display: inline-block;
+    margin: auto 0;
+    font-size: 1.25em;
+}
+.NavText h1{
+    font-family: "Montserrat Medium";
+}
+.blue{
+    font-family: "Montserrat Light";
+    color: #4361ee
+}
+
+.light{
+    font-family: "Montserrat ExtraLight";
+}
+
+.NavLien{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    height: 30px;
+    width: 350px;
+    right: 0;
+    margin: 40px;
+}
+
+.NavBg{
+    transition: 200ms;
+}
+
+.NavLien button{
+    border: none;
+    background: none;
+    color: #000;
+    font-family: "Montserrat Light";
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.NavLien button.active{
+    color: #4361ee;
+    transition: 200ms;
+}
+
+body{
+    background: none;
+}
+
+.fond-footer{
+    background-color: #E6DACE;
+    z-index: -1;
+    top: 0;
+    height: 1000px;
+    width: 40%;
+    position: absolute;
+}
+
+.container{
+    margin: 200px 0 0 20vw;
+    position: relative;
+    height: 600px;
+    width: 850px;
+    opacity: 0;
+    animation: titleAnimate 500ms ease-in-out forwards;
+    transform: translateY(20px);
+}
+
+@keyframes titleAnimate{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.partie1{
+    background-color: #F4ECE6;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 7px;
+    box-shadow: -20px 20px 30px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -20px 20px 30px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -20px 20px 30px 0px rgba(0,0,0,0.1);
+}
+.partie1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.partie1 h1{
+    margin: 15px;
+    font-family: "Montserrat Medium";
+    font-size: 1.7em;
+    letter-spacing: -1px;
+}
+.ligne{
+    margin: 25px auto;
+    border-bottom: 3px solid black;
+    width: 20%; /* largeur de la ligne */
+    border-radius: 10px;
+    border-color: #4361ee;
+}
+
+.age{
+    font-family: "Montserrat ExtraLight" ;
+    font-size: 1.1em;
+    margin: 0px;
+}
+
+.partie1 h2{
+    margin: 0;
+    font-family: "Montserrat ExtraLight" ;
+    font-size: 1.2em;
+}
+
+.footer{
+    background-color: #fff;
+    border-radius: 0 0 7px 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    height: 10%;
+}
+
+.footer img{
+    margin: 10px;
+    border-radius: 0;
+    width: auto;
+    height: 35px;
+}
+
+.partie2{
+    position: absolute;
+    background-color: none;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    padding: 40px 90px;
+}
+
+.partie2 h1{
+    color: black;
+    font-size: 3.5em;
+    font-family: "Montserrat Medium";
+    letter-spacing: -1px;
+}
+
+.partie2 h2{
+    margin: 25px 10px ;
+    font-size: 1.5em;
+    font-family: "Montserrat Light";
+}
+
+.lien{
+    background:none;
+    margin: 25px 0 0 0px;
+    width: 300px;
+    height: 35px;
+}
+
+.lien button{
+    width: 48%;
+    height: 100%;
+    font-size: 0.9em;
+    font-family: "Montserrat Medium";
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cv{
+    background-color: #4361ee;
+    border: #4361ee solid 2px;
+    color: #fff;
+    margin-right: 2%;
+    transition: 200ms;
+}
+
+.cv:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.projets{
+    background: none;
+    border: #000 solid 2px;
+    transition: 200ms;
+}
+
+.projets:hover{
+    background-color: #4361ee;
+    color: #fff;
+    border: #4361ee solid 2px;
+}
+
+.text{
+    margin: 50px 0 0 0;
+    font-family: "Montserrat Light";
+    font-size: 1.05em;
+    text-align: left;
+}
+
+
+footer{
+    width: 98vw;
+    height: 120px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer2{
+    display: none;
+}
+
+.linkContainer{
+    margin: 30px 50px;
+    width: 400px;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-style: normal; 
+    font-size: 0.8em;
+}
+
+.linkContainer{
+    text-align: center;
+}
+
+.linkContainer label{
+    font-weight: 700;
+}
+
+.linkContainer a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-family: "Montserrat Light";
+    letter-spacing: 0.5px;
+}
+
+.linkContainer img{
+    margin-top: -5px;
+    height: 17px;
+    width: auto;
+}
+.credit{
+    margin: 60px 20px;
+    font-size: 0.8em;
+    font-family: "Montserrat Light";
+}
+
+/* Bouton Lien*/
+
+.btnLien {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 40px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    }
+
+    .btnLien input {
+    display: none;
+    }
+
+    .btnLien span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 8px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    }
+
+    .btnLien span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+    }
+
+    .btnLien span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    }
+
+    .btnLien span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+    }
+
+    .btnLien input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+    }
+
+    .btnLien input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+    }
+
+    .btnLien input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+    }
+
+@media screen and (max-width: 625px){
+    header{
+        width: 100%;
+        height: 100px;
+        box-shadow: #000 0 -15px 25px;
+        text-align: center;
+    }
+    .NavText{
+        background-color: none;
+        width: 250px;
+        height: 50px;
+        text-align: left;
+        display: block;
+        margin: 23px 25px;
+    }
+    
+    .NavText h1, h2{
+        font-size: 1em;
+        margin: 3px 5px;
+    }
+    .lien{
+        width: 100%;
+    }
+    .NavBg{
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F4ECE6;
+        display: none;
+        justify-content: center;
+    }
+
+    .NavLien{
+        right: inherit;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 200px;
+    }
+
+    .NavLien button{
+        font-size: 1.5em;
+        background-color:#f0e5dc;
+        box-shadow: #dac9bb 0 0px 5px 0;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 15px;
+        width: 300px;
+        
+    }
+
+    .btnLien{
+        display: block;
+    }
+
+    .container{
+        margin:  0;
+        margin: 100px 0;
+        position: relative;
+        height: 1100px;
+        width: 100%;
+        opacity: 0;
+        animation: titleAnimate 500ms ease-in-out forwards;
+        transform: translateY(20px);
+    }
+    .fond-footer{
+        display: none;
+    }
+
+    .partie1{
+        border-radius: 0px;
+        width: 100%;
+        height: 550px;
+        box-shadow: none;
+    }
+
+    .partie2{
+        position: relative;
+        background-color: none;
+        width: 100%;
+        height: 550px;
+        padding: 40px 40px;
+    }
+
+    .fond-footer{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer2{
+        display: block;
+    }
+
+    footer{
+        position: relative;
+        background-color: none;
+        height: inherit;
+        width: 100%;
+        display: block;
+    }
+    .linkContainer{
+        background-color: none;
+        margin: 0;
+        display: block;
+        text-align: left;
+        padding: 50px 30px;
+    }
+
+    .link{
+        display: block;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .linkContainer label{
+        display: inline;
+        width: 100%;
+
+    }
+
+    .linkContainer a{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (min-width: 625px) and (max-width : 950px) {
+    header{
+        width: 100%;
+        height: 100px;
+        box-shadow: #000 0 -15px 25px;
+        text-align: center;
+    }
+
+    .NavBg{
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F4ECE6;
+        display: none;
+        justify-content: center;
+    }
+
+    .NavLien{
+        right: inherit;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 200px;
+    }
+
+    .NavLien button{
+        font-size: 1.5em;
+        background-color:#f0e5dc;
+        box-shadow: #dac9bb 0 0px 5px 0;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 15px;
+        width: 300px;
+        
+    }
+
+    .btnLien{
+        display: block;
+    }
+
+    .container{
+        margin:  0;
+        margin-top: 100px;
+        position: relative;
+        height: 1100px;
+        width: 100%;
+        opacity: 0;
+        animation: titleAnimate 500ms ease-in-out forwards;
+        transform: translateY(20px);
+    }
+    .fond-footer{
+        display: none;
+    }
+
+    .partie1{
+        border-radius: 0px;
+        width: 100%;
+        height: 550px;
+        box-shadow: none;
+    }
+
+    .partie2{
+        position: relative;
+        background-color: none;
+        width: 100%;
+        height: 550px;
+        padding: 40px 40px;
+    }
+
+    .fond-footer{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer2{
+        display: block;
+    }
+
+    footer{
+        bottom: -50px;
+    }
+    
+}
+
+@media screen and (min-width : 951px) and (max-width : 1500px) {
+    .container{
+        margin: 200px 17vw;
+    }
+
+    .NavLien{
+        display: flex;
+    }
+}
+
+@media screen and (min-width : 1500px) {
+    .container{
+        margin:  200px 25vw;
+    }
+
+    .NavLien{
+        display: flex;
+    }
+}
+
+/*firefox*/
+* {
+scrollbar-width: thin;
+}
+
+/*safari, chrome, edge*/
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+border-radius: 20px;
+}
+
+@media screen and (max-width: 710px) and (min-width : 320px) {
+    footer{
+        position: relative;
+        background-color: none;
+        height: inherit;
+        width: 100%;
+        display: block;
+        padding-top: 1px;
+    }
+    .linkContainer{
+        background-color: none;
+        margin: 0;
+        display: block;
+        text-align: left;
+        padding: 50px 30px;
+    }
+
+    .link{
+        display: block;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .linkContainer label{
+        display: inline;
+        width: 100%;
+
+    }
+    .linkContainer a{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+    .NavText{
+        background-color: none;
+        width: 250px;
+        height: 50px;
+        text-align: left;
+        display: block;
+        margin: 23px 25px;
+    }
+    
+    .partie1 img{
+        width: 150px;
+        height: auto;
+    }
+    .partie2 h1{
+        font-size: 2.5em;
+    }
+
+    .partie2 h2{
+        font-size: 1.3em;
+        margin: 20px 5px;
+    }
+    .NavText h1, h2{
+        font-size: 0.7em;
+        margin: 3px 5px;
+    }
+    footer{
+        position: relative;
+        background-color: none;
+        height: inherit;
+        width: 100%;
+        display: block;
+        padding-top: 1px;
+    }
+    .linkContainer{
+        background-color: none;
+        margin: 0;
+        display: block;
+        text-align: left;
+        padding: 50px 30px;
+    }
+
+    .link{
+        display: block;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    .linkContainer label{
+        display: inline;
+        width: 100%;
+
+    }
+    .linkContainer a{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .credit{
+        font-size: 0.8em;
+    }
+
+    .cv{
+        margin: 0.1px;
+    }
+
+    .lien{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width : 375px){
+    .NavLien button{
+        font-size: 1em;
+        padding: 10px;
+        width: 200px;
+    }
+}
