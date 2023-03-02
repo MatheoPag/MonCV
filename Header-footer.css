@@ -83,9 +83,6 @@ header{
     transition: 200ms;
 }
 
-body{
-    background: #F4ECE6;
-}
 
 
 @keyframes titleAnimate{
