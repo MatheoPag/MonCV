@@ -1,5 +1,5 @@
 function notAvailable() {
-    window.alert("Not currently available");
+    window.alert("Bientôt disponible");
 }
 
 function CheckBox(){
